@@ -1,0 +1,60 @@
+<html>
+<title>Tugas 13</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<body>
+<div class="w3-container w3-center" style="background-color:#FFEBCD" >
+ <img src="css/wl.jpeg" style="width:20%" "min-height:" 75%;>
+</div>
+<div class="w3-bar" style="background-color:#B0C4DE">
+ <button class="w3-bar-item w3-button" onclick="openKota('Lion')">Singa</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Rabbit')">Kelinci</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Owl')">Burung Hantu</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Cat')">Kucing</button>
+</div>
+<div id="Lion" class="w3-container kota w3-animate-zoom " style="display:none">
+	<h2>Singa</h2>
+	<hr>
+	<img src="css/ln.jpeg" style="width:40%">
+	<h3 style="font-size:15;">Singa dianggap hewan yang paling megah dan sering dianggap raja rimba dalam cerita-cerita seperti dongeng. 
+		Singa sering dijadikan sebagai tokoh antagonis, 
+		tetapi singa juga sering dijadikan tokoh protagonis seperti dalam film animasi The Lion King.</h3>
+</div>
+<div id="Rabbit" class="w3-container kota" style="display:none">
+	<h2>Kelinci</h2>
+	<hr>
+	<img src="css/rb.jpg" style="width:50%">
+	<h3 style="font-size:15;">Kelinci atau kuilu adalah hewan mamalia dari famili Leporidae, yang dapat ditemukan di banyak bagian bumi.
+			berkembang biak dengan cara beranak yang disebut vivipar. 
+			Dulunya, hewan ini adalah hewan liar yang hidup di Afrika hingga ke daratan Eropa.</h3>
+</div>
+<div id="Owl" class="w3-container kota" style="display:none">
+	<h2>Burung Hantu</h2>
+	<hr>
+	<img src="css/owl.jpg" style="width:40%">
+	<h3 style="font-size:15;">Burung hantu adalah kelompok burung yang merupakan anggota dari ordo Strigiformes.
+		 Burung ini termasuk golongan burung buas (karnivora/ pemakan daging) dan merupakan hewan malam (nokturnal).
+		 Seluruhnya,terdapat sekitar 222 spesies yang telah diketahui, yang menyebar di seluruh dunia kecuali Antarktika,
+		 sebagian besar Greenland, dan beberapa pulau-pulau terpencil.</h3>
+</div>
+<div id="Cat" class="w3-container kota" style="display:none">
+	<h2>Kucing</h2>
+	<hr>
+	<img src="css/Kc.jpeg" style="width:40%">
+	<h3 style="font-size:15;">kucing adalah salah satu hewan peliharaan terpopuler di dunia.
+		Kucing yang garis keturunannya tercatat secara resmi sebagai kucing trah atau galur murni
+		(pure breed), seperti persia, siam, manx dan sphinx. 
+		seperti ini biasanya dibiakkan di tempat pemeliharaan hewan resmi</h3>
+</div>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
